@@ -1,4 +1,4 @@
-print 'Welcome to Pypet!'
+print('Welcome to Pypet!')
 
 cat = {
   'name': 'Fluffy',
@@ -23,16 +23,16 @@ def feed(pet):
   if pet['hungry'] == True:
     pet['hungry'] = False
     pet['weight'] = pet['weight'] + 1
-    print 'omnomom!!'
+    print('omnomom!!')
   else:
-    print 'The Pypet is not hungry!'
+    print('The Pypet is not hungry!')
 
 for pet in pets:
-    print '------------------------------'
-    print 'Hello ' + pet['name'] + '!'
-    print pet['photo']
-    print 'Weight: ' + str(pet['weight'])
+    print('------------------------------')
+    print('Hello ' + pet['name'] + '!')
+    print(pet['photo'])
+    print ('Weight: ' + str(pet['weight']))
     feed(pet)
-    print 'Weight: ' + str(pet['weight'])
-    print '------------------------------'
+    print ('Weight: ' + str(pet['weight']))
+    print ('------------------------------')
 
